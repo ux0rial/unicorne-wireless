@@ -16,6 +16,8 @@
 #define Media 2
 #define Num 3
 #define Symbol 4
+#define FN 5
+#define QWERTY 6
 
 / {
     behaviours {
