@@ -57,17 +57,17 @@
         Base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp B          &kp L         &kp D         &kp W               &kp Z      &kp SQT      &kp F                &kp O         &kp U         &kp J          &kp MINUS
-&kp CAPS   &hm_l LCTRL N  &hm_l LALT R  &hm_l LGUI T  &hm_l LEFT_SHIFT S  &kp G      &kp Y        &hm_r RIGHT_SHIFT H  &hm_r RGUI A  &hm_r RALT E  &hm_r RCTRL I  &kp SINGLE_QUOTE
-&kp GRAVE  &kp Q          &kp X         &kp M         &kp C               &kp V      &kp K        &kp P                &kp DOT       &kp COMMA     &kp SLASH      &kp SEMI
-                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &kp TAB    &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
+&kp ESC    &kp Q          &kp Y         &kp O         &kp U               &kp Z        &kp W        &kp D                &kp L         &kp P         &kp B          &kp MINUS
+&kp CAPS   &hm_l LCTRL H  &hm_l LALT I  &hm_l LGUI E  &hm_l LEFT_SHIFT A  &kp COMMA    &kp G        &hm_r RIGHT_SHIFT T  &hm_r RGUI R  &hm_r RALT S  &hm_r RCTRL N  &kp SEMICOLON
+&kp GRAVE  &kp X          &kp SQT       &kp SLASH     &kp DOT             &kp J        &kp K        &kp M                &kp C         &kp F         &kp V          &kp DOUBLE_QUOTES
+                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &kp TAB      &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
             >;
         };
 
         Nav_layer {
             display-name = "Navigation";
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
+&trans  &trans     &tog 0    &trans    &tog 6     &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS    &trans
 &trans  &trans     &trans    &trans    &trans     &trans    &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
                              &trans    &trans     &trans    &kp RETURN  &kp BACKSPACE  &kp DELETE
@@ -111,6 +111,16 @@
 &trans  &kp SCROLLLOCK   &kp F4  &kp F5             &kp F6     &kp F11    &trans  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
 &trans  &kp PRINTSCREEN  &kp F1  &kp F2             &kp F3     &kp F10    &trans  &trans           &trans             &trans         &trans             &trans
                                  &kp K_APPLICATION  &kp SPACE  &kp TAB    &trans  &trans           &trans
+            >;
+        };
+
+        QWERTY_layer {
+            display-name = "Qwerty";
+            bindings = <
+&kp ESC    &kp Q          &kp W         &kp E         &kp R               &kp T      &kp Y        &kp U                &kp I         &kp O         &kp P                  &kp MINUS
+&kp CAPS   &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LEFT_SHIFT F  &kp G      &kp H        &hm_r RIGHT_SHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &kp SQT
+&kp GRAVE  &kp Z          &kp X         &kp C         &kp V               &kp B      &kp N        &kp M                &kp COMMA     &kp PERIOD    &kp SLASH              &kp BACKSLASH
+                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &kp TAB    &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
             >;
         };
     };
