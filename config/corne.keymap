@@ -59,10 +59,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&tog 8>,
+                <&tog 0>,
                 <&macro_release>,
                 <&macro_pause_for_release>,
-                <&tog 8>;
+                <&tog 0>;
 
             label = "CHANGE_TO_QWERTY";
         };
@@ -74,38 +74,20 @@
         Base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Z          &kp Y         &kp O         &kp U               &kp Q        &kp W        &kp D                &kp L         &kp P         &kp B          &kp MINUS
-&kp CAPS   &hm_l LCTRL H  &hm_l LALT I  &hm_l LGUI E  &hm_l LEFT_SHIFT A  &kp COMMA    &kp G        &hm_r RIGHT_SHIFT T  &hm_r RGUI R  &hm_r RALT S  &hm_r RCTRL N  &kp SEMICOLON
-&kp GRAVE  &kp X          &kp SQT       &kp SLASH     &kp DOT             &kp J        &kp K        &kp M                &kp C         &kp F         &kp V          &kp DOUBLE_QUOTES
-                                        &lt 4 ESCAPE  &lt 3 BACKSPACE     &kp TAB      &lt 6 ENTER  &lt 5 SPACE          &lt 7 DELETE
-            >;
-        };
-
-        qw1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        qw2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESC    &kp SQT        &kp U         &kp O         &kp F               &kp J      &kp Q        &kp W                &kp D         &kp L         &kp B          &kp MINUS
+&kp CAPS   &hm_l LCTRL I  &hm_l LALT E  &hm_l LGUI A  &hm_l LEFT_SHIFT H  &kp Y      &kp G        &hm_r RIGHT_SHIFT S  &hm_r RGUI T  &hm_r RALT R  &hm_r RCTRL N  &kp SEMICOLON
+&kp GRAVE  &kp SLASH      &kp MINUS     &kp PERIOD    &kp P               &kp K      &kp V        &kp C                &kp M         &kp X         &kp Z          &kp DOUBLE_QUOTES
+                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &kp TAB    &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
             >;
         };
 
         Nav_layer {
             display-name = "Navigation";
             bindings = <
-&trans  &trans     &change_to_qwerty  &mo 1     &mo 2      &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
-&trans  &kp LCTRL  &kp LALT           &kp LGUI  &kp LSHFT  &trans    &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS    &trans
-&trans  &trans     &trans             &trans    &trans     &trans    &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
-                                      &trans    &trans     &trans    &kp RETURN  &kp BACKSPACE  &kp DELETE
+&trans  &trans     &trans    &trans    &trans     &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS    &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
+                             &trans    &trans     &trans    &kp RETURN  &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -148,24 +130,14 @@
                                  &kp K_APPLICATION  &kp SPACE  &kp TAB    &trans  &trans           &trans
             >;
         };
-
-        QWERTY_layer {
-            display-name = "Qwerty";
-            bindings = <
-&kp ESC    &kp Q          &kp W         &kp E         &kp R               &kp T      &kp Y        &kp U                &kp I         &kp O         &kp P                  &kp MINUS
-&kp CAPS   &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LEFT_SHIFT F  &kp G      &kp H        &hm_r RIGHT_SHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &kp SQT
-&kp GRAVE  &kp Z          &kp X         &kp C         &kp V               &kp B      &kp N        &kp M                &kp COMMA     &kp PERIOD    &kp SLASH              &kp BACKSLASH
-                                        &lt 4 ESCAPE  &lt 3 BACKSPACE     &kp TAB    &lt 6 ENTER  &lt 5 SPACE          &lt 7 DELETE
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         qwerty_activation {
-            if-layers = <1 2>;
-            then-layer = <8>;
+            if-layers = <1 1>;
+            then-layer = <6>;
         };
     };
 };
