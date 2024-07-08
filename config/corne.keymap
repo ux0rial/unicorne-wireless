@@ -130,14 +130,18 @@
                                  &kp K_APPLICATION  &kp SPACE  &kp TAB    &trans  &trans           &trans
             >;
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+        HJKL_layer {
+            bindings = <
+&trans  &trans            &trans        &trans            &trans          &trans    &trans     &trans         &trans      &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans    &trans     &kp H          &kp J       &kp K   &kp L   &trans
+&trans  &trans            &trans        &trans            &trans          &trans    &trans     &kp W          &kp D       &kp Q   &trans  &trans
+                                        &trans            &trans          &trans    &kp ENTER  &kp BACKSPACE  &kp DELETE
+            >;
 
-        qwerty_activation {
-            if-layers = <1 1>;
-            then-layer = <6>;
+            label = "QWERTY homerow navi";
         };
     };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
