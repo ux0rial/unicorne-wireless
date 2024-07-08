@@ -77,7 +77,7 @@
 &kp ESC    &kp K          &kp Y              &kp O         &kp U               &kp MINUS    &kp V        &kp P                &kp M         &kp F         &kp W          &kp PLUS
 &kp J      &hm_l LCTRL H  &hm_l LALT I       &hm_l LGUI E  &hm_l LEFT_SHIFT A  &kp COMMA    &kp B        &hm_r RIGHT_SHIFT T  &hm_r RGUI N  &hm_r RALT S  &hm_r RCTRL R  &kp Z
 &kp GRAVE  &kp SQT        &kp DOUBLE_QUOTES  &kp Q         &kp PERIOD          &kp SLASH    &kp G        &kp D                &kp L         &kp C         &kp X          &kp EQUAL
-                                             &lt 2 ESCAPE  &lt 1 BACKSPACE     &kp TAB      &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
+                                             &lt 2 ESCAPE  &lt 1 BACKSPACE     &lt 6 TAB    &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
             >;
         };
 
