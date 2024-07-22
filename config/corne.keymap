@@ -74,9 +74,9 @@
         Base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp B          &kp L         &kp D         &kp C               &kp V        &kp J        &kp F                &kp O         &kp U         &kp COMMA      &kp PLUS
-&kp COLON  &hm_l LCTRL N  &hm_l LALT R  &hm_l LGUI T  &hm_l LEFT_SHIFT S  &kp G        &kp Y        &hm_r RIGHT_SHIFT H  &hm_r RGUI A  &hm_r RALT E  &hm_r RCTRL I  &kp MINUS
-&kp GRAVE  &kp X          &kp Q         &kp M         &kp W               &kp Z        &kp K        &kp P                &kp SQT       &kp SEMI      &kp PERIOD     &kp EQUAL
+&kp GRAVE  &kp V          &kp L         &kp H         &kp G               &kp K        &kp Q        &kp F                &kp O         &kp U         &kp J          &kp MINUS
+&kp EQUAL  &hm_l LCTRL S  &hm_l LALT R  &hm_l LGUI N  &hm_l LEFT_SHIFT T  &kp B        &kp Y        &hm_r RIGHT_SHIFT C  &hm_r RGUI A  &hm_r RALT E  &hm_r RCTRL I  &kp DOUBLE_QUOTES
+&kp TILDE  &kp Z          &kp X         &kp M         &kp D               &kp P        &kp SQT      &kp W                &kp DOT       &kp SEMI      &kp COMMA      &kp SLASH
                                         &lt 2 ESCAPE  &lt 1 BACKSPACE     &lt 6 TAB    &lt 4 ENTER  &lt 3 SPACE          &lt 5 DELETE
             >;
         };
