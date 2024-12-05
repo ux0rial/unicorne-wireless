@@ -134,7 +134,7 @@
         HJKL_layer {
             bindings = <
 &trans  &trans            &trans        &trans            &trans          &trans    &trans     &trans         &trans      &trans  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans    &trans     &kp H          &kp J       &kp K   &kp L   &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans    &kp H      &kp J          &kp K       &kp L   &trans  &trans
 &trans  &trans            &trans        &trans            &trans          &trans    &trans     &kp W          &kp D       &kp Q   &trans  &trans
                                         &trans            &trans          &trans    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
