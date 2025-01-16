@@ -59,17 +59,17 @@
         Base_layer {
             display-name = "Base";
 
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  B  |  L  |  D  |  W  |  V  |        |  J  |  F  |  O  |  U  |  '  |
-// |  N  |  R  |  T  |  S  |  G  |        |  Y  |  H  |  A  |  E  |  I  |
-// |  X  |  Q  |  M  |  C  |  Z  |        |  K  |  P  |  .  |  ;  |  ,  |
-//                 |  BSPC  |  TAB  |   |  ENTER  |  SPC  | 
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  B  |  L  |  D  |  W  |  V  |        |  J  |  F  |  O  |  U  |  '  |
+            // |  N  |  R  |  T  |  S  |  G  |        |  Y  |  H  |  A  |  E  |  I  |
+            // |  X  |  Q  |  M  |  C  |  Z  |        |  K  |  P  |  .  |  ;  |  ,  |
+            //                 |  BSPC  |  TAB  |   |  ENTER  |  SPC  | 
 
             bindings = <
 &kp GRAVE  &kp B          &kp L         &kp D         &kp W               &kp V                               &kp J                              &kp F                &kp O         &kp U         &kp COMMA      &kp MINUS
 &kp EQUAL  &hm_l LCTRL N  &hm_l LALT R  &hm_l LGUI T  &hm_l LEFT_SHIFT S  &hm_l LS(LA(LC(LEFT_COMMAND))) G    &hm_r RS(RA(RC(RIGHT_COMMAND))) Y  &hm_r RIGHT_SHIFT H  &hm_r RGUI A  &hm_r RALT E  &hm_r RCTRL I  &kp DOUBLE_QUOTES
 &kp TILDE  &kp X          &kp Q         &kp M         &kp C               &kp Z                               &kp K                              &kp P                &kp SQT       &kp SEMI      &kp DOT        &kp SLASH
-                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &lt 6 TAB                           &lt 4 ENTER                        &lt 3 SPACE          &lt 5 DELETE
+                                        &lt 2 ESCAPE  &lt 1 SPACE         &lt 6 ENTER                         &lt 4 TAB                          &lt 3 BACKSPACE      &lt 5 DELETE
             >;
         };
 
@@ -86,10 +86,10 @@
         Media_layer {
             display-name = "Media";
             bindings = <
-&bootloader  &trans     &trans    &trans    &trans     &trans    &trans      &trans            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans       &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans      &kp C_PREV        &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT  &trans
-&trans       &trans     &trans    &trans    &trans     &trans    &trans      &bt BT_SEL 0      &bt BT_SEL 1          &bt BT_CLR            &trans      &trans
-                                  &trans    &trans     &trans    &kp K_STOP  &kp C_PLAY_PAUSE  &kp K_MUTE
+&trans  &trans     &trans    &trans    &trans     &trans    &trans      &trans            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans      &kp C_PREV        &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans      &bt BT_SEL 0      &bt BT_SEL 1          &bt BT_CLR            &trans      &trans
+                             &trans    &trans     &trans    &kp K_STOP  &kp C_PLAY_PAUSE  &kp K_MUTE
             >;
         };
 
@@ -116,10 +116,10 @@
         FN_layer {
             label = "Function Keys";
             bindings = <
-&trans  &trans           &kp F7  &kp F8             &kp F9     &kp F12    &trans  &trans           &trans             &trans         &trans             &trans
-&trans  &kp SCROLLLOCK   &kp F4  &kp F5             &kp F6     &kp F11    &trans  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
-&trans  &kp PRINTSCREEN  &kp F1  &kp F2             &kp F3     &kp F10    &trans  &trans           &trans             &trans         &trans             &trans
-                                 &kp K_APPLICATION  &kp SPACE  &kp TAB    &trans  &trans           &trans
+&bootloader  &trans           &kp F7  &kp F8             &kp F9     &kp F12    &trans  &trans           &trans             &trans         &trans             &trans
+&trans       &kp SCROLLLOCK   &kp F4  &kp F5             &kp F6     &kp F11    &trans  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
+&sys_reset   &kp PRINTSCREEN  &kp F1  &kp F2             &kp F3     &kp F10    &trans  &trans           &trans             &trans         &trans             &trans
+                                      &kp K_APPLICATION  &kp SPACE  &kp TAB    &trans  &trans           &trans
             >;
         };
 
