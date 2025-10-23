@@ -78,7 +78,7 @@
 &kp EQUAL  &kp B          &kp L         &kp D         &kp W               &kp V                               &kp J                              &kp F                &kp O               &kp U         &kp APOS       &kp MINUS
 &kp GRAVE  &hm_l LCTRL N  &hm_l LALT R  &hm_l LGUI T  &hm_l LEFT_SHIFT S  &hm_l LS(LA(LC(LEFT_COMMAND))) G    &hm_r RS(RA(RC(RIGHT_COMMAND))) Y  &hm_r RIGHT_SHIFT H  &hm_r RGUI A        &hm_r RALT E  &hm_r RCTRL I  &kp SEMICOLON
 &kp TILDE  &kp Q          &kp X         &kp M         &kp C               &kp Z                               &kp K                              &kp P                &kp COMMA           &kp DOT       &kp SLASH      &kp BACKSLASH
-                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &lt 0 TAB                           &lt 4 ENTER                        &lt 3 SPACE          &lt 5 LEFT_CONTROL
+                                        &lt 2 ESCAPE  &lt 1 BACKSPACE     &hm_l LS(LA(LC(LEFT_GUI))) TAB      &lt 4 ENTER                        &lt 3 SPACE          &lt 5 LEFT_CONTROL
             >;
         };
 
