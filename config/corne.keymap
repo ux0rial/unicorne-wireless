@@ -85,7 +85,7 @@
         Nav_layer {
             display-name = "Navigation";
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &kp K_CUT      &kp K_REDO      &kp K_PASTE     &kp K_COPY     &kp K_CUT        &kp K_UNDO  &trans
+&trans  &trans     &trans    &trans    &none      &kp K_CUT      &none           &kp K_REDO      &none          &kp K_UNDO       &none       &trans
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp K_COPY     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp INSERT  &trans
 &trans  &trans     &trans    &trans    &trans     &kp K_PASTE    &kp CAPSLOCK    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &trans
                              &trans    &trans     &trans         &kp RETURN      &kp BACKSPACE   &kp DELETE
